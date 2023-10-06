@@ -1,6 +1,6 @@
 ## iflames (an iframework)
 
-This is the first completely iframe-based framework.
+This is the first (and best) completely iframe-based framework.
 - **css-in-iframe** - Scoped CSS out of the box (kick rocks, :scope)
 - **Proven** - Well established industry standard (1997 - ?)
 - **Fast** - Lightweight, ships very little JS (i.e. absolutely none)
