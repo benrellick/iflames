@@ -9,7 +9,7 @@ This is the first completely iframe-based framework.
 - **Equitable** - Accessible, or at least not inaccessible
 
 ## Project roadmap
-- Supercharge the iframe via a web component, tentively titled either `<better-iframe>` or `<this-iframe-fucks>`
+- Supercharge the iframe via a web component, tentatively titled either `<better-iframe>` or `<this-iframe-fucks>`
 - Reinvent the wheel by reimplementing `useSignal()` via `postMessage()`
 - Use CSS custom properties to pass props. Can an iframe within an iframe even *read* CSS custom properties from the parent element? tbh, I don't know if anyone has ever had motivation misguided enough to try.
 
