@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <!-- Text in the parent element is unaffected by styles within components --> 
+    <p>Text outside the iframe</p>
+
+    <iframe width="500px" height="500px" srcdoc="
+
+      <iframe srcdoc='
+        <h1>Heading</h1>
+        <style>
+          h1 {
+            color: red;
+          }
+        </style>
+      '></iframe>
+
+      <iframe srcdoc='
+        <p>Text inside the iframe</p>
+        <style>
+          /* Styles scoped only to p elements within this iframe */
+          p {
+            color: blue;
+          }
+        </style>
+      '></iframe>
+
+      <iframe srcdoc='
+        <button>CTA</button>
+        <style>
+          button {
+            background: pink;
+          }
+        </style>
+      '></iframe>
+
+    "></iframe>
+
+  </body>
+</html>
